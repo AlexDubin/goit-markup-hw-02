@@ -1,6 +1,13 @@
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    --hero-text-color: #FFFFFF;
+}
+
 body {
     background-color: #FFFFFF;
-    color: #2E2F42;
+    color:var(--primary-text-color);
 }
 
 ul {
@@ -11,10 +18,59 @@ a {
     text-decoration:none;
 }
 
+/* Logo */
+
 .logo {
-    color: #2E2F42;
+    color: var(--title-text-color);
 }
 
 .logo-web {
-    color: #4D5AE5;
+    color: var(--accent-color);
 }
+
+/* Site nav */
+
+.site-nav .link {
+     color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--primary-text-color);
+}
+
+.site-nav .link:active {
+    color: var(--accent-color);
+}
+
+.mail-tel, .mail, .tel {
+    color: var(--primary-text-color);
+}
+
+.mail-tel:hover,
+.mail:hover,
+.tel:hover,
+.mail-tel:focus,
+.mail:focus,
+.tel:focus
+ {
+    color: var(--accent-color);
+}
+
+
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* Hero */
+
+.hero-title {
+    color: var(--hero-text-color);
+}
+
+.feature-list, title {
+    color: var(--title-text-color);
+}
+
+
